@@ -14,7 +14,7 @@ passwd = getpass.getpass('Please enter the password: ')
 #Change the directory to the folder of the checks
 os.chdir('/home/ibrahim/Documents/network_tools/')
 
-#defining a variable for the folders of the checks
+#defining a variable for the folders of the checks hello bos
 network_tools_list = os.listdir('/home/ibrahim/Documents/network_tools/')
 print(network_tools_list)
 
