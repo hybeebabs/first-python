@@ -5,7 +5,7 @@ from netmiko import ConnectHandler
 from utils import router_loop
 from utils import execute_show_commands
 import getpass
-import datetime
+
 
 #time_now = datetime.datetime.now().isoformat(timespec="seconds")
 user_name = input('username: ')
@@ -41,11 +41,11 @@ with open(working_sheet , 'r') as file:
             output = connection.send_command(each_config)
             print(output)
         connection.disconnect()
-        #saving the output
+        #saving the output to a new folder in the  document file
         os.chdir('/home/ibrahim/Documents/script_output/')
         backup_dir = '/home/ibrahim/Documents/script_output/' + working_sheet
         if not os.path.exists(backup_dir):
-            os.makedirs(backup_dir)
+            os.makedirs(backup_dir) i
         fo = open(backup_dir + '/' + router_id, 'w')
         fo.write(output)
         
