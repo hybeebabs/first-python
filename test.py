@@ -41,7 +41,7 @@ with open(working_sheet , 'r') as file:
             output = connection.send_command(each_config)
             print(output)
         connection.disconnect()
-        #saving the output
+        #saving the output to a new folder
         os.chdir('/home/ibrahim/Documents/script_output/')
         backup_dir = '/home/ibrahim/Documents/script_output/' + working_sheet
         if not os.path.exists(backup_dir):
