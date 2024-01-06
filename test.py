@@ -5,7 +5,7 @@ from netmiko import ConnectHandler
 from utils import router_loop
 from utils import execute_show_commands
 import getpass
-import datetime
+
 
 #time_now = datetime.datetime.now().isoformat(timespec="seconds")
 user_name = input('username: ')
